@@ -2,39 +2,140 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-:root{
-    --cor-de-fundo:#EBECEE;
-    --branco: white;
+html,body{
+    height: 100%;
 }
 
-body{
-    background-color: var(--cor-de-fundo);
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
-.container__imagem{
-    padding: 1em;
-}
-
-.cabecalho{
-    background-color: var(--branco);
-    display:flex;
-    justify-content: space-between;
+header{
+    width: 100%;
+    height: 120px;
+    background-color: #103a9e;
+    color: white;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 40px;
 }
 
-.cabecalho__menu-hunburger{
-    width: 24px;
-    height: 24px;
-    background-image: url('imagens/Menu.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+a{
+    text-decoration: none;
 }
 
-.container{
-    display:flex;
+ul{
+    list-style: none;
+}
+
+.fa-solid{
+   font-size: 40px;
+   cursor: pointer;
+}
+
+.fa-xmark{
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: 80px;
+}
+
+.oculto {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s;
+    width: 0;
+}
+
+.aberto {
+    color: black;
+    opacity: 1;
+    height: 100vh;
+    position: fixed;
+    top: -0px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #103a9e;
+}
+
+.conteudo-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo-flex h1{
+    padding-left: 50px;
+    border-bottom: 1px solid white;
+}
+
+.conteudo-flex a{
+    color: white;
+    padding-top:10px;
+}
+
+.conteudo-flex > h1 > i{
     align-items: center;
+}
+
+.chamada-1{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.chamada-1 div h1{
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.chamada-1 img{
+    width: 550px;
+}
+
+.informacoes-1{
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 499px){
+    .fa-xmark{
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .chamada-1 img{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 404px){
+    .conteudo-flex h1{
+        font-size: 26px;
+        padding-left: 15px;
+    }
+
+    .fa-xmark{
+        font-size: 25px;
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 1029px){
+    .chamada-1{
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .chamada-1 div{
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
 }

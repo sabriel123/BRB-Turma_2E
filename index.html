@@ -5,59 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d913e226cd.js" crossorigin="anonymous"></script>
-    <script>function alternarConteudo() {
+    <script>
+        function alternarConteudo() {
         var conteudo = document.getElementById("conteudo");
         conteudo.classList.toggle("aberto");
         conteudo.classList.toggle("oculto");
-      }</script>
-    <title>Projeto Barão 60 anos</title>
+        }
+      </script>
+    <title>AluraBooks</title>
 </head>
 <body>
-
-    <header>
-
-        <h1>Logomarca</h1>
-
-        <i onclick="alternarConteudo()" class="fa-solid fa-bars"></i>
-
+    <header class="cabecalho">
+        <div class="container">
+            <span class="cabecalho__menu-hunburger container__imagem" onclick="alternarConteudo()"></span>
+            <img src="imagens/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">
+        </div>
+        <div class="container">
+            <a href="#"><img src="imagens/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="imagens/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="imagens/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
     </header>
 
-    <div id="conteudo" class="oculto">
-        <div class="conteudo-flex">
-            <h1>Acesso rápido <i onclick="alternarConteudo()" class="fa-solid fa-xmark"></i> </h1>
-            <a href="#">1. Construção do Barão</a>
-            <a href="#">2. Construção do Barão</a>
-            <a href="#">3. Construção do Barão</a>
-        </div>
+    <div id="conteudo" class="conteudo oculto">
+        <ul>
+            <li>Programação</li>
+            <li>Front-end</li>
+            <li>Infraestrutura</li>
+            <li>Business</li>
+            <li>Design & UX</li>
+        </ul>
     </div>
-
-    <section class="center chamada-1">
-
-            <div class="informacoes-1">
-                <h1>COMO FOI CRIADO O
-                    COLÉGIO BARÃO DO RIO BRANCO</h1>
-                <p>
-                    A sede foi criada pelo decreto número 10.748 de 26/01/63,
-                    sendo governador o Sr. Ney A. de Barros Braga e
-                    secretário da educação e cultura do Paraná o Sr.
-                    Jacundino da Silva Furtado, eles em parceriam fundaram
-                    vários colégios, espalhando assim a educação pelo Paraná
-                    e consequentemente em Londrina.
-                    Em 09 de maio de 1980 foi solicitado a reconstrução do
-                    prédio pois encontrava-se em estado precário de
-                    conservação - de madeira até 1983, com isso ele passou a
-                    atender apenas alunos do fundamental || para cima
-                </p>
-            </div>
-
-            <img src="images/img1.jpeg" alt="">
-
-    </section>
-
-    
 </body>
 </html>

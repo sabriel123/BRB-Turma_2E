@@ -8,6 +8,7 @@
 :root{
     --cor-de-fundo:#EBECEE;
     --branco: white;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 162.37%);
 }
 
 body{
@@ -102,6 +103,6 @@ body{
     font-weight: 400;
     text-align: center;
     color: var(--branco);
-    background: url("../imagens/Luva.svg") no-repeat;
+    background: url('imagens/Lupa.svg') no-repeat;
     background-position: 1em;
 }

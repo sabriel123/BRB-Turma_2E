@@ -191,3 +191,7 @@ ul,li{
     color: var(--branco);
     text-decoration: none;
 }
+
+.item2{
+    padding-left: 10px;
+}
